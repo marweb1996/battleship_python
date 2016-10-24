@@ -1,0 +1,21 @@
+Bonustasks:
+Die Bonustasks werden mit dem Parameter -t (tasks) gestartet.
+
+-Krake: Die Krake erscheint standardmäßig alle 10 Runden auf einem zufällig ausgewählten aber noch freien Feld. 
+	Die Einstellung kann aber beliebig im GameData-Objekt geändert werden. 
+	Wenn die Krake erscheint zerstört sie alles was auf dem entsprechenden Feld vorhanden ist.
+	Es gibt 2 Arten von Treffern:
+		1. Die Krake trifft kein Schiff, dann wird die betroffene Stelle mit einem '-'-Symbol gekennzeichnet.
+		2. Die Krake trifft ein Schiff, dann wird die betroffene Stelle mit einem '+'-Symbol gekennzeichnet.
+	Dem Spieler wird nach dem Erscheinen der Krake eine Meldung angezeigt, welchen Schaden die Krake angerichtet hat.
+
+-Seemine Variante 2: Nach dem setzen der Schiffe (Spieler + Bot) werden zufällig 5 beliebige Koordinaten ausgewählt, auf denen eine Seemine platziert wird.
+		     Triff ein Spieler während des Spiels auf eine Mine, so wird dieses Feld und alle herumliegenden Felder sofort zerstört.
+		     Dem Spieler wird danach eine Meldung angezeigt, welchen Schaden die Mine angerichtet hat.
+
+-Speichern/Laden: Es ist möglich ein erstelltes Spiel zu speichern bzw. anschließend wieder zu laden.
+		  Folgende Befehle gibt es:
+			- save: Gibt der Spieler diesem Befehl ein wird das gesamte GameData-Objekt in die Datei 'gameData.txt' gespeichert.
+				Das Speichern eines Spiels ist erst nach dem erfolgreichen setzen aller Schiffe des Spielers und des Bots möglich.
+			- load: Gibt der Spieler diesen Befehl ein wird das gespeicherte Spiel (wenn vorhanden) geladen und gestartet. 
+	
